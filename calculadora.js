@@ -12,14 +12,14 @@ const priceBondPaper = 0.05
     function btnOnClick() {
         if (paper.value == 'quimico'){
             const sumaDatos = sheets.value * copies.value * priceQuimPaper;
-        total.innerText = sumaDatos;
+        total.innerText = "$" +  sumaDatos;
 
         } else if (paper.value == 'bond2'){
             const sumaDatos = sheets.value * copies.value * priceBondPaper;
-        total.innerText = sumaDatos;
+        total.innerText = "$" + sumaDatos;
         }else {
             const sumaDatos = sheets.value * priceBondPaper * 1 ;
-        total.innerText = sumaDatos;
+        total.innerText = "$" + sumaDatos;
         }
         
     }
