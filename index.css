@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-color: #5c5c5c;
+}
+.mainContainer{
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.mainSelector{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.box{
+    display: grid;
+    width: 500PX;
+    height: 500PX;
+    background-color: #f1f1f1;
+    justify-content: center;
+    
+}
+.titulo{
+    display: grid;
+    justify-content: center;
+}
+.titulo h1{
+    display:inline-block;
+    width: 361px;
+    height: 14px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.mainSelector{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    
+}
+
+
+.cajaPaper{
+    width: 200px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+}
+.paperBox{
+    display: grid;
+    width: 87px;
+    height: 25px;
+    background-color: #19B5E4;
+    border-radius: 5px;
+    justify-content: center;
+}
+.papel{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.namePapel{
+    display: grid;
+    margin: 2px 0 auto;
+    justify-content: center;
+    align-content: center;
+    color: aliceblue;
+}
+.opPaper{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 0;
+    gap: 15px;
+    margin-top: 10px;
+}
+.cajaSize{
+    display: grid;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+}
+
+.sizeBox{
+    display: grid;
+    width: 87px;
+    height: 25px;
+    background-color: #19B5E4;
+    border-radius: 5px;
+    justify-content: center;
+}
+.nameSize{
+    display: grid;
+    margin: 2px 0 auto;
+    justify-content: center;
+    align-content: center;
+    color: aliceblue;
+}
+.optionSize{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding: 0 0 0 0;
+    gap: 15px;
+    margin-top: 10px;
+}
+.opSize {
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.cajaSheets{
+    display: grid;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+}
+
+.sheetsBox{
+    place-self: center;
+    width: 87px;
+    height: 40px;
+    background-color: #19B5E4;
+    border-radius: 5px;
+}
+
+.nameSheets{
+    display: grid;
+    margin: 2px 0 auto;
+    justify-content: center;
+    align-content: center;
+    color: aliceblue;
+    text-align: center;
+}
+
+.opSheets{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.totalPrice{
+    display: grid;
+    justify-content: center;
+    grid-column: span 2;
+    text-align: center;
+}
