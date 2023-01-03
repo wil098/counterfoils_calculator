@@ -4,96 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador de papeleria</title>
-    <link rel="stylesheet" href="./">
-    <script type="text" src="papeleria2.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section class="mainContainer">
-        <div class="box">
-            <div class="titulo">
-                <h1>CALCULADORA DE PRECIOS</h1>
-                </div>
-
-            <div class="mainSelector">
-                <div class="cajaPaper">
     
-                    <div class="paperBox">
-                        <p class="namePapel">Papel</p>
-                        <div class="papel">
-                            <form class="opPaper" id="opPaper">
-                                <input type="radio" id="bond" name="opPaper" value="bond">
-                                <label for="bond">Bond</label>
-                                <input type="radio" name="opPaper" id="quimico" value="quimico">
-                                <label for="quimico">Quimico</label>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="cajaSize">
-                    <div class="sizeBox">
-                        <p class="nameSize">Tamaño</p>
-                        
-                        <div class="size">
-                            <div class="optionSize">
-                            <form class="opSize" id="opSize">
-                                <input type="radio" name="opSize" id="carta" value="carta">
-                                <label for="carta">Carta</label>
-                                <input type="radio" name="opSize" id="oficio" value="oficio">
-                                <label for="oficio">Oficio</label>
-                                <br>
-                                <input type="radio" name="opSize" id="halfCarta" value="halfCarta">
-                                <label for="halfCarta">1/2 Carta</label>
-                                <input type="radio" name="opSize" id="halfOficio" value="halfOficio">
-                                <label for="halfOficio">1/2 Oficio</label>
-
-                            </form>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cajaSheets">
-                    <div class="sheetsBox">
-                        <p class="nameSheets"> Hojas por juego</p>
-                    </div>
-
-                    <div class="sheets">
-                        <div class="optionSheets">
-                            <form class="opSheets" id="opSheets">
-                                <input type="radio" name="opSheets" id="1" value="1">
-                                <label for="1">1</label>
-                                <input type="radio" name="opSheets" id="2" value="2">
-                                <label for="2">2</label>
-                                <input type="radio" name="opSheets" id="3" value="3">
-                                <label for="3">3</label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cajaAmount">
-                    <div class="amountBox">
-                        <p class="nameAmout">Cantidad de hojas</p>
-                    </div>
-                    <form class="inputAmount" id="amount">
-                        <input type="text" name="amount" id="amountSheets" value="">
-                    </form>
-                </div>
-
-
-                <div class="totalPrice">
-                    <b>
-                        <p class="nameTotal">Total</p>
-                        <p class="total" id="total"> <br>saludos </p> <!-- Aqui va el total -->
-                        <div>
-                            <button id="botonCalcular" onclick="quimicoHalf()" >Calcular total</button>
-                        </div>
-                    </b>
-                </div>
-            </div>
+    
+    <div class="container">
+        <h1 class="title">CALCULADORA DE PAPELERÍA</h1>
+        <div class="data">
+            <p>Cantidad de hojas</p>
+            <input id="sheets" type="number" placeholder="Cantidad de hojas" \>
+            <p>Tipo de papel</p>
+            <select name="Tipo de papel" id="paper">
+                <option value="quimico">Quimico</option>
+                <option value="bond">Bond</option>
+                <option value="bond2">Bond copia</option>
+            </select>
+            <p id="cantCopies">Cantidad de copias</p>
+            <select name="cantCopies" id="copies">
+                <option value="0">0</option>
+                <option value="1">1 Amarillo</option>
+                <option value="2">2 Celeste</option>
+                <option value="3">3 Rosa</option>
+            </select>
+            <button type="button" id="btnCalcular" onclick="btnOnClick()"> Calcular </button>
+            <p>Total</p>
+            <p id="total"></p>
         </div>
-    </section>
+    </div>
+    
+
+
+
+    <script src="./calculadora.js"></script>
 </body>
 </html>
